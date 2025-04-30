@@ -1,0 +1,36 @@
+@import './reset.css';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input {
+  @apply w-full p-3 border border-solid rounded-lg text-sm;
+}
+
+.form-label {
+  @apply text-base font-medium text-gray-600 block;
+}
+
+.form-error {
+  @apply mt-1 ml-1 text-[10px] font-bold text-red-700;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
