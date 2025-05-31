@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "backend_url_here"; // Replace with your actual backend URL
+const BASE_URL = "BACKEND URL"; // Replace with your actual backend URL
 
 export const createApiInstance = () => {
   const token = localStorage.getItem("token");
